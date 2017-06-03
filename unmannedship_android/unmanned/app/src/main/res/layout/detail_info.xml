@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:textColor="@color/title_text"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:background="@color/title_bar"
+        android:text="@string/detail_info"
+        android:textSize="26dp"/>
+    <TextView
+        android:id="@+id/shipname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="船名：无数据" />
+    <TextView
+        android:id="@+id/lasttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="数据获取时间：无数据" />
+    <TextView
+        android:id="@+id/shipstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="状态：在线" />
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="经度：无数据" />
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="纬度：无数据" />
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:textSize="18dp"
+        android:text="方位：无数据" />
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="温度：无数据" />
+    <TextView
+        android:id="@+id/oxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="含氧量：无数据" />
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="18dp"
+        android:text="酸碱值：无数据" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="0.8"
+       android:weightSum="1"
+       android:gravity="bottom">
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/history_info"
+           android:textColor="#ffffff"
+           android:background="#00BFFF"
+           android:textSize="16sp"
+           android:text="查看历史数据"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="bottom"
+           android:weightSum="1">
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.5"
+               android:id="@+id/map"
+               android:textColor="#ffffff"
+               android:background="#ffc41f"
+               android:textSize="16sp"
+               android:text="查看地图位置"/>
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:layout_weight="0.5"
+               android:textColor="#ffffff"
+               android:background="#fa782c"
+               android:id="@+id/history_loc"
+               android:text="历史位置监测"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</LinearLayout>

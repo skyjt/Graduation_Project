@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.91"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:id="@+id/main_title"
+            android:textColor="@color/title_text"
+            android:background="@color/title_bar"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/setting"
+            android:layout_weight="0.85"
+            android:src="@drawable/setting"/>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ship_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.09" />
+
+
+</LinearLayout>
